@@ -23,6 +23,12 @@
     }
 }
 
+@custom-variant folded {
+    @media (device-posture: folded) {
+        @slot;
+    }
+}
+
 @utility text-underline-under {
     text-underline-position: under;
 }
