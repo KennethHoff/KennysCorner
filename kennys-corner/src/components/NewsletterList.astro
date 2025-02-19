@@ -5,12 +5,12 @@ interface Props {
     class?: string;
 }
 
-const { class: className = "" } = Astro.props;
+const { class: className } = Astro.props;
 
 const allWeeks = await getCollection("newsletter");
 ---
 
-<ol class:list={className}>
+<ol class:list={[className]}>
     {
         allWeeks.map((post) => {
             return (

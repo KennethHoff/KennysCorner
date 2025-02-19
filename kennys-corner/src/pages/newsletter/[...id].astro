@@ -27,7 +27,7 @@ const { Content } = await render(post);
     <meta content={post.data.author} name="author" slot="head-meta" />
 
     <div class="col-[content] grid grid-cols-2">
-        <NewsletterList class="supports-[folded]:not-folded:hidden" />
+        <NewsletterList class="not-folded:hidden" />
         <article class="not-folded:col-span-2">
             <h1 class="text-5xl">{post.data.title}</h1>
             <Content />
