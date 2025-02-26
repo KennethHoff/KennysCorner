@@ -11,10 +11,12 @@ const siteUrl =
     process.env.VERCEL_ENV == "production"
         ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
         : // Otherwise, if you have a VERCEL_URL, use it
-          process.env.VERCEL_URL
-          ? `https://${process.env.VERCEL_URL}`
-          : // Otherwise, just use localhost.
+        process.env.VERCEL_URL
+            ? `https://${process.env.VERCEL_URL}`
+            : // Otherwise, just use localhost.
             "http://localhost:4321";
+
+const port = Number(process.env.PORT);
 
 export default defineConfig({
     site: siteUrl,
@@ -24,4 +26,7 @@ export default defineConfig({
     integrations: [sitemap(), react()],
     adapter: vercel(),
     trailingSlash: "never",
-});
+    ...(port && {
+        server: { port: port }
+    })
+})
