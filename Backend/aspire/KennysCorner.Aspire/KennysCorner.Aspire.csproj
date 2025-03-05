@@ -12,4 +12,8 @@
     <PackageReference Include="CommunityToolkit.Aspire.Hosting.NodeJS.Extensions" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\KennysCorner.Api\KennysCorner.Api.csproj" />
+  </ItemGroup>
+
 </Project>

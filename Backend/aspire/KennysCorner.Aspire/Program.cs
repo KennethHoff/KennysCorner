@@ -1,6 +1,8 @@
 var builder = DistributedApplication.CreateBuilder(args: args);
 
-builder.AddViteApp(name: "astro", workingDirectory: "../../kennys-corner", packageManager: "pnpm")
+builder.AddProject<Projects.KennysCorner_Api>("api");
+
+builder.AddViteApp(name: "astro", workingDirectory: "../../../Frontend", packageManager: "pnpm")
     .WithExternalHttpEndpoints()
     .WithPnpmPackageInstallation();
 

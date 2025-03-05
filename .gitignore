@@ -2,4 +2,4 @@
 .vercel
 .idea
 
-Aspire/artifacts
+Backend/**/artifacts
