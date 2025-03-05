@@ -8,5 +8,13 @@
 
         <AnalysisLevel>latest-all</AnalysisLevel>
         <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+        
+        <NoWarn>
+            $(NoWarn);
+            CA2007; <!-- Don't require calling ConfigureAwait(false) on literally every task -->
+            CA1812; <!-- Don't require all types to be instantiated -->
+            CA1724; <!-- Don't require all type names to be conflict-free with all namespaces -->
+            CA1062; <!-- Don't require all parameters to be checked for null -->
+        </NoWarn>
     </PropertyGroup>
 </Project>
