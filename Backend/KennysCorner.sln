@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KennysCorner.Aspire", "aspi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KennysCorner.Api", "src\KennysCorner.Api\KennysCorner.Api.csproj", "{0729897B-78CA-46DE-8F6A-108C5963CB2C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KennysCorner.ServiceDefaults", "src\KennysCorner.ServiceDefaults\KennysCorner.ServiceDefaults.csproj", "{10EA62EA-17F1-48B6-B093-CF3B745D910D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,18 @@ Global
 		{0729897B-78CA-46DE-8F6A-108C5963CB2C}.Release|x64.Build.0 = Release|Any CPU
 		{0729897B-78CA-46DE-8F6A-108C5963CB2C}.Release|x86.ActiveCfg = Release|Any CPU
 		{0729897B-78CA-46DE-8F6A-108C5963CB2C}.Release|x86.Build.0 = Release|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Debug|x64.Build.0 = Debug|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Debug|x86.Build.0 = Debug|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Release|x64.ActiveCfg = Release|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Release|x64.Build.0 = Release|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Release|x86.ActiveCfg = Release|Any CPU
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -58,5 +72,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{6A27E3C3-A300-47D0-AC1B-5AB49ED5F622} = {903AC06B-D01E-4EE9-AB73-290E12F5F018}
 		{0729897B-78CA-46DE-8F6A-108C5963CB2C} = {E73C53CE-45F6-4D7F-AE76-A3BED44FE479}
+		{10EA62EA-17F1-48B6-B093-CF3B745D910D} = {E73C53CE-45F6-4D7F-AE76-A3BED44FE479}
 	EndGlobalSection
 EndGlobal
